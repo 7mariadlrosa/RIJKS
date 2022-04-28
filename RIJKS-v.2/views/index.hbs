@@ -1,0 +1,104 @@
+<h1>{{appTitle}} </h1>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../images/1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="/collections"></a>
+                <h5>Niños del mar</h5></a>
+                <p>- Jozef Israels -</p>
+            </div>
+            <button type="button" class="btn btn-outline-dark"><a href="/collections">SABER
+                    MÁS</a></button>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../images/2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-outline-dark"></button><a href="/collections"></a>
+                <h5>Festin de palacio</h5></a>
+                <p>- Johannes Vermeer -</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="btn btn-outline-dark"></button><a href="/collections"></a>
+                <h5>La lechera</h5></a></button>
+                <p>- Johannes Vermeer -</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+<div class="card bg-dark text-white">
+    <img src="../images/4.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <h5 class="card-title">COLECCIÓN DEL MUSEO</h5>
+        <button type="button" class="btn btn-outline-dark"><a href="/collections">VER MÁS</a></button>
+        <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EVENTO 1</h5>
+                <p>Fecha</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestiae atque,
+                    culpa voluptatem, reiciendis, eveniet esse veritatis quam omnis velit excepturi. Temporibus sunt quo
+                    molestias a eos rem vitae debitis.</p>
+                {{#if User}}
+                <button type="button" class="btn btn-outline-dark"><a href="">UNIRME</a></button>
+                {{/if}}
+                <button type="button" class="btn btn-outline-dark"><a href="">DETALLES</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EVENTO 2</h5>
+                <p>Fecha</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sunt. Deserunt
+                    aspernatur dolore cum iste eaque nisi libero doloribus vel sunt totam harum odio tempore, aliquam
+                    numquam laudantium est voluptas.</p>
+                {{#if User}}
+                <button type="button" class="btn btn-outline-dark"><a href="">UNIRME</a></button>
+                {{/if}}
+                <button type="button" class="btn btn-outline-dark"><a href="">DETALLES</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">EVENTO 3</h5>
+                <p>Fecha</p>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quidem quod
+                    accusamus provident dignissimos optio ad cupiditate, atque vitae blanditiis maxime repellat unde
+                    animi ex iste sequi totam sed tempore.</p>
+                {{#if User}}
+                <button type="button" class="btn btn-outline-dark"><a href="">UNIRME</a></button>
+                {{/if}}
+                <button type="button" class="btn btn-outline-dark"><a href="">DETALLES</a></button>
+            </div>
+        </div>
+    </div>
+</div>

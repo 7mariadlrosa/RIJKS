@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>OBRAS DE LA COLECCIÓN</h2>
+    <hr>
+    <div class="row">
+        {{#each artData}}
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem">
+                <img src={{webImage.url}} class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6>{{title}}</h6>
+                    <h5>{{principalOrFirstMaker}}</h5>
+                    <a href="/collections/{{id}}" class="btn btn-primary">DETALLES</a>
+                    <a href="" class="btn btn-primary">GUARDAR</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-dark block"><a href="/">INICIO</a></button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="container-student-details">
+        <h2>Perfil de <strong> {{name}} {{lastname}}</strong></h2>
+        <hr>
+        <p>Email: {{email}}</p>
+        {{!-- <p><strong>Descripción:</strong> {{user.description}}</p> --}}
+
+        <button class="btn btn-sm btn-dark"> <a href="/user/{{id}}/edit">EDITAR</a></button>
+
+        {{#if isAdmin, isSameID}}
+        <form action="/user/{{user.id}}/delete" method="POST"><button class="btn btn-sm btn-dark"
+                type="submit">ELIMINAR</button>
+        </form>
+        {{/if}}
+    </div>
+</div>

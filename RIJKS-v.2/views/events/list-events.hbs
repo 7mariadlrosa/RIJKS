@@ -1,0 +1,22 @@
+<div class="flex-container">
+    <h2> LISTA DE EVENTOS </h2>
+    <hr>
+    {{#each events}}
+    <div class="mt-5">
+        <div class="card" style="width: 18rem;">
+            <img src={{cover}} class="card-img-top" alt="museo de noche">
+            <div class="card-body">
+                <h4 class="card-title">{{name}}</h4>
+                <p class="card-text">{{description}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{date}}</li>
+                <li class="list-group-item">{{location}}</li>
+            </ul>
+            <div class="flex-container">
+                <a href="/event/{{id}}/list-detail-events" class="btn btn-primary">VER MÁS</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
