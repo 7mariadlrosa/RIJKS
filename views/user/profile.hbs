@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="container-user-details">
+        <div>
+            <h2>Perfil de <strong> {{userInfo.name}} {{userInfo.lastname}}</strong></h2>
+            <hr style="height:2px;border-width:0;background-color:#ffc107">
+            <p>EMAIL: {{userInfo.email}}</p>
+            <p>NOMBRE DE USUARIO: {{userInfo.username}}</p>
+            <p>DESCRIPCIÓN: Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quod itaque tempore
+                cumque!
+                Sint, dolore commodi. Officiis minus similique nostrum fuga, dolorem mollitia veniam sequi
+                accusantium
+                sint debitis possimus voluptatem.</p>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#ffc107">
+        <div class="container-eventos">
+            <h5 class="title-events-details">PROXIMOS EVENTOS</h5>
+            <div class="row">
+                {{#each userInfo.favEvent}}
+                <div class="col-md-4">
+                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">EVENTO</div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <p class="card-text">{{date}}</p>
+                            <p class="card-text">{{location}}</p>
+                            <p class="card-text">{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <hr style="height:2px;border-width:0;color:gray;background-color:#ffc107">
+        <div class="container-favart">
+            <h5 class="title-art-details">OBRAS DE ARTE FAVORITAS</h5>
+            <div class="row">
+                {{#each favArtsInfo}}
+                <div class="col-md-4">
+                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">{{title}}</div>
+                        <img src="{{webImage.url}}" class="card-img-top-details-profile" alt="{{webImage.url}}">
+                        <div class="card-body">
+                            <p class="card-text">{{created}}</p>
+                            <p class="card-text">{{productionPlace}}</p>
+                            <p class="card-text">{{description}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- <form action="/user/{{_id}}/edit" method="POST"><button class="btn btn-sm btn-dark" type="submit">EDITAR
+        </form> --}}
+
+        {{#if isAdmin}}
+        <form action="/user/{{_id}}/delete" method="POST"><button class="btn btn-sm btn-dark"
+                type="submit">ELIMINAR</button>
+        </form>
+        {{/if}}
+        {{#if isSameID}}
+        <form action="/user/{{_id}}/delete" method="POST"><button class="btn btn-sm btn-dark"
+                type="submit">ELIMINAR</button>
+        </form>
+        {{/if}}
+    </div>
+</div>

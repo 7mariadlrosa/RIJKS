@@ -1,0 +1,124 @@
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="../images/art2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="titlecarrousel">LA LECHERA</h5>
+                <p class="titlecarrousel">- Johannes Vermeer -</p>
+                <button type="button" class="btn btn-warning"><a href="/collections/collections">VER MÁS</a></button>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="../images/art1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="titlecarrousel">PAISAJE INVERNAL</h5>
+                <p class="titlecarrousel">- Hendrick Avercamp -</p>
+                <button type="button" class="btn btn-warning"><a href="/collections/collections">SABER
+                        MÁS</a></button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../images/art3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="titlecarrousel">RETRATO DE DON RAMÓN</h5>
+                <p class="titlecarrousel">- Francisco de Goya -</p>
+                <button type="button" class="btn btn-warning"><a href="/collections/collections">SABER
+                        MÁS</a></button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExamplelight" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExamplelight" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+<div class="card-welcome">
+    <div class="card-body-welcome">
+        <div>
+            <h5 class="card-title">BIENVENIDX A LA COMUNIDAD RIJKS</h5>
+        </div>
+        <div>
+            <p class="card-text">Ten siempre a mano tus obras favoritas, asiste a eventos con personas interesadas en el
+                mundo del arte, crea comunidad y sobre todo, aprende con nosotros.</p>
+        </div>
+    </div>
+</div>
+
+<div class="events">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="../images/evento1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Visita guiada nocturna</h5>
+                    <p>Fecha: 13/8/2022</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestiae atque,
+                        culpa voluptatem, reiciendis, eveniet esse veritatis quam omnis velit excepturi. Temporibus sunt
+                        quo
+                        molestias a eos rem vitae debitis.</p>
+                    {{#if User}}
+                    <button type="button" class="btn btn-outline-warning"><a href="">UNIRME</a></button>
+                    {{/if}}
+                    <button type="button" class="btn btn-outline-warning"><a href="/event/list-events">SABER
+                            MÁS</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images/Captura de pantalla 2022-04-28 a las 20.52.05.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Guía teatralizada</h5>
+                    <p>Fecha: 26/09/2022</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sunt. Deserunt
+                        aspernatur dolore cum iste eaque nisi libero doloribus vel sunt totam harum odio tempore,
+                        aliquam
+                        numquam laudantium est voluptas.</p>
+                    {{#if User}}
+                    <button type="button" class="btn btn-outline-warning"><a href="">UNIRME</a></button>
+                    {{/if}}
+                    <button type="button" class="btn btn-outline-warning"><a href="/event/list-events">SABER
+                            MÁS</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../images/evento3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Visita a las obras de Rembrant</h5>
+                    <p>Fecha: 04/10/2022</p>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quidem
+                        quod
+                        accusamus provident dignissimos optio ad cupiditate, atque vitae blanditiis maxime repellat unde
+                        animi ex iste sequi totam sed tempore.</p>
+                    {{#if User}}
+                    <button type="button" class="btn btn-outline-warning"><a href="">UNIRME</a></button>
+                    {{/if}}
+                    <button type="button" class="btn btn-outline-warning"><a href="/event/list-events">SABER
+                            MÁS</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{!-- <div class="card text-white">
+    <img src="../images/museo.png" class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <h5 class="card-title">COLECCIÓN DEL MUSEO</h5>
+        <button type="button" class="btn btn-outline-warning"><a href="/collections/collections">TODAS LAS
+                OBRAS</a></button>
+    </div>
+</div> --}}

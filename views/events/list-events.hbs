@@ -1,0 +1,28 @@
+<div class="container-eventos">
+    <h2 class="title-list-events"> LISTA DE EVENTOS </h2>
+    <div class="row">
+        {{#each events}}
+        <div class="col-md-4">
+            <div class="card" style="width: 30rem">
+                <img src={{cover}} class="card-img-top" alt="museoe">
+                <div class="card-body">
+                    <h4 class="card-title">{{name}}</h4>
+                    <p class="card-text">{{description}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{date}}</li>
+                    <li class="list-group-item">{{location}}</li>
+                </ul>
+                <div class="flex-container">
+                    <a href="/event/{{id}}/list-detail-events" class="btn btn-outline-warning">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        {{!-- {{#if isAdmin}} --}}
+        <div class="flex-container">
+            <a href="/event/created-events" class="btn btn-outline-warning">CREAR EVENTO</a>
+        </div>
+        {{!-- {{/if}} --}}
+    </div>
+</div>

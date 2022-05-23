@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="container-details">
+        <h4 class="title-details">DETALLES DE LA OBRA</h4>
+        <div class="card-art-details" style="width: 80rem">
+            <div class="card">
+                <div class="card-body">
+                    <h6>{{art.artObject.title}}</h6>
+                    <h5>{{art.artObject.principalOrFirstMaker}}</h5>
+                    <h5>{{art.artObject.productionPlace}}</h5>
+                    <p class="card-text">{{art.artObject.description}}</p>
+                    <div>
+                    </div>
+                </div>
+
+                <img src="{{art.artObject.webImage.url}}" class="card-img-top-details"
+                    alt="{{art.artObject.webImage.url}}">
+            </div>
+            <div>
+                {{#if isUser}}
+                <div class="btn-details">
+                    <form action="/collections/{{art.artObject.id}}/favs-arts" method="POST">
+                        <button type="submit" class="btn btn-outline-warning">GUARDAR</button>
+                    </form>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

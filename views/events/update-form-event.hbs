@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>EDITAR EVENTO</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action='/event/{{id}}/edit-events' method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre del evento</label>
+                    <input type="text" class="form-control" id="name" name="name" value="{{name}}">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="date" name="date" value="{{date}}">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Descripción</label>
+                    <input type="text" class="form-control" id="description" name="description" value="{{description}}">
+                </div>
+                <button type="submit" class="btn btn-dark">GUARDAR</button>
+                <a href="/" class="btn btn-dark">INICIO</a>
+            </form>
+            <hr>
+        </div>
+    </div>
+</div>

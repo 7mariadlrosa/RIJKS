@@ -1,0 +1,28 @@
+<div class="container">
+    <h4>DETALLES DE LA OBRA</h4>
+    <div class="row">
+        {{!-- {{#if results.length}} --}}
+        {{#each artData}}
+        <div class="card users-card" style="width: 18rem;">
+            <div class="card-body card-results">
+                <img src={{webImage.url}} class="card-img-top" alt={{webImage.url}}>
+                <div class="card-body">
+                    <h6>{{name}}</h6>
+                    <h5>{{principalOrFirstMaker}}</h5>
+                    <h5>{{productionPlace}}</h5>
+                    <p class="card-text">{{description}}</p>
+                    <a href="/colecciones" class="btn btn-primary">VOLVER</a>
+                    <a href="" class="btn btn-primary">GUARDAR</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        {{!-- {{else}}
+        <div class="row justify-content-center">
+            <center>
+                <h4>No hay resultados.</h4>
+                <center>
+        </div>
+        {{/if}} --}}
+    </div>
+</div>

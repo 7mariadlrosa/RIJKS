@@ -1,0 +1,38 @@
+<div class="container">
+    <h4 class="title-details-events">DETALLES DEL EVENTO</h4>
+    <div class="mt-5">
+        <div class="card" style="width: 70rem;">
+            <img src="{{event.cover}}" class="card-img-top-event" alt="evento">
+            <div class="card-body">
+                <h5 class="card-title"> {{event.name}} </h5>
+                <p class="card-text">{{event.description}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Fecha: 25-12-2022</li>
+                <li class="list-group-item">Hora: 12:00 </li>
+            </ul>
+
+            <div class="card-body">
+                <div>
+                    {{#if isUser}}
+                    <div>
+                        <form action="/event/{{event.id}}/favs-events" method="POST">
+                            <button type="submit" class="btn btn-outline-warning">ASISTIR</button>
+                        </form>
+                    </div>
+                    {{/if}}
+                </div>
+                <div>
+                    {{#if isAdmin}}
+                    <form action="/event/{{event.id}}/edit-events" method="POST">
+                        <button class="btn btn-primary" type="submit">EDITAR</button>
+                    </form>
+                    <form action="/event/{{event.id}}/delete-events" method="POST">
+                        <button class="btn btn-primary" type="submit">ELIMINAR</button>
+                    </form>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

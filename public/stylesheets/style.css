@@ -1,0 +1,180 @@
+body {
+  font: 14px Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.titlecarrousel {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.card-welcome {
+  padding: 80px;
+}
+
+.card-body-welcome {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.title-collections {
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.card-body h5 {
+  font-weight: bold;
+}
+
+.title-details {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.btn-details {
+  margin-left: 20px;
+}
+
+.title-list-events {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.flex-container-events {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin: 20px;
+}
+
+.title-details-events {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.card-img-top-event {
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-art-details {
+  height: 300px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-img-top-details {
+  object-fit: cover;
+  height: 500px;
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: bold;
+  justify-content: center;
+  justify-items: baseline;
+}
+
+
+h1 {
+  font: 25px "Lucida Grande";
+  margin-top: 25px;
+
+}
+
+.container-obras {
+  margin: 40px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.events {
+  margin: 40px;
+}
+
+.container-eventos {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.container-user-details {
+  margin: 40px;
+}
+
+.title-events-details {
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.title-art-details {
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.title-create-events {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.title-signup {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.title-login {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.cerrar-sesion {
+  border: none;
+  background-color: #212429;
+
+}
+
+footer {
+  background-color: #212429;
+  color: white;
+  text-align: center;
+  padding: 4px;
+  font-size: .8em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.card-img-top-details-profile {
+  height: 200px;
+  object-fit: cover;
+}

@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h4 class="title-signup">REGISTRO</h4>
+            <hr style="height:2px;background-color:#ffc107">
+            <form action="/signup" method="POST">
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nameInput" name="name">
+                    <label for="lastnameInput" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="lastnameInput" name="lastname">
+                    <label for="usernameInput" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="usernameInput" name="username">
+                </div>
+                <div class="mb-3 row">
+                    <div class="col">
+                        <label for="emailInput" class="form-label">Dirección de email</label>
+                        <input type="email" class="form-control" id="emailInput" name="email">
+                        <div class="form-text">Requerido.</div>
+                    </div>
+                    <div class="col">
+                        <label for="pwdInput" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="pwdInput" name="userPwd">
+                        <div class="form-text">Requerido.</div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-warning">COMPLETAR REGISTRO</button>
+                </div>
+                <hr>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-warning"><a href="/">INICIO</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

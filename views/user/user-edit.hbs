@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1>EDITAR PERFIL DE USUARIO</h1>
+            <<hr style="height:2px;background-color:#ffc107" style="height:2px;background-color:#ffc107">>
+                <form action="/user/{{_id}}/edit" method="POST">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">NOMBRE</label>
+                        <input type="text" class="form-control" id="name" name="name" value="{{name}}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label">APELLIDOS</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" value="{{lastname}}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">USERNAME</label>
+                        <input type="text" class="form-control" id="username" name="username" value="{{username}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">EMAIL</label>
+                        <input type="text" class="form-control" id="email" name="email" value="{{email}}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">CONTRASEÑA</label>
+                        <input type="text" class="form-control" id="description" name="description">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">GUARDAR</button>
+                    <a <hr style="height:2px;background-color:#ffc107"
+                        style="height:2px;background-color:#ffc107">ef="/" class="btn btn-dark">INICIO</a>
+                </form>
+                <<hr style="height:2px;background-color:#ffc107" style="height:2px;background-color:#ffc107">>
+        </div>
+    </div>
+</div>

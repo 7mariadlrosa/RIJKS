@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h4 class="title-login">INICIAR SESIÓN</h4>
+            <hr style="height:2px;background-color:#ffc107">
+            <form action="/login" method="POST">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Dirección de email</label>
+                    <input type="email" class="form-control" placeholder="Dirección de email" id="emailInput"
+                        name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="pwdInput" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" id="pwdInput" name="userPwd">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-warning">ACCEDER</button>
+                </div>
+                <hr style="height:2px;background-color:#ffc107">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-warning"><a href="/">INICIO</a></button>
+                </div>
+            </form>
+
+            {{#if errorMessage}}
+            <h3>{{errorMessage}}</h3>
+            {{/if}}
+        </div>
+    </div>
+</div>
