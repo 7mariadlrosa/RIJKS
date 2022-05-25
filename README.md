@@ -10,13 +10,11 @@ This idea arises from the need to create a project around one of my main interes
   <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
  </div>
  
-  ##
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=7mariadlrosa&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
- 
+## RUTES AND METHODS
 
-| METHOD | URL | DESCRIPCIÓN | PROTEGIDA | ROLES PERMITIDOS |
+| METHOD | URL | DESCRIPTION | PROTECTED | ROLES |
 |---------------|---------------|---------------|---------------|---------------|
-|GET|/|Página principal|False||
+|GET|/|Home|False||
 |GET|/registro|Sing-up|False||
 |POST|/registro|Sing-up|False||
 |GET|/iniciar-sesión|Log-in|True|All|
